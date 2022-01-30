@@ -1,22 +1,12 @@
-# Welcome to HashLips 👄
+# Welcome to NFT Art Engine.
 
-![](https://github.com/HashLips/hashlips_art_engine/blob/main/logo.png)
+This repo helps you to create your own collection of NFT based on layers.
 
-All the code in these repos was created and explained by HashLips on the main YouTube channel.
+This repo was cloned from HashLip Art Engine by HashLips.
 
-To find out more please visit:
+Here is the original repo: (https://github.com/HashLips/hashlips_art_engine)
 
-[📺 YouTube](https://www.youtube.com/channel/UC1LV4_VQGBJHTJjEWUmy8nA)
-
-[👄 Discord](https://discord.com/invite/qh6MWhMJDN)
-
-[💬 Telegram](https://t.me/hashlipsnft)
-
-[🐦 Twitter](https://twitter.com/hashlipsnft)
-
-[ℹ️ Website](https://hashlips.online/HashLips)
-
-# HashLips Art Engine 🔥
+# NFT Art Engine 🔥
 
 ![](https://github.com/HashLips/hashlips_art_engine/blob/main/banner.png)
 
