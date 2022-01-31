@@ -24,8 +24,8 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
-    layersOrder: [
+    growEditionSizeTo: 10,//This is the number of images that will be created.
+    layersOrder: [//Name should be exactly the same as the folder names in layers folder. Layer organization should also be carefully ordered.
       { name: "Background" },
       { name: "Eyeball" },
       { name: "Eye color" },

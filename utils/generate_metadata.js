@@ -15,6 +15,7 @@ const canvas = createCanvas(format.width, format.height);
 const ctx = canvas.getContext("2d");
 const metadataList = [];
 
+//This function clears the metadata and regenerates it.
 const buildSetup = () => {
   if (fs.existsSync(buildDir)) {
     fs.rmdirSync(buildDir, { recursive: true });
@@ -128,6 +129,7 @@ isNeighborColor = (color1, color2, tolerance) => {
   );
 };
 
+//This takes the file names of the images. So, it's important to name the image files accordingly. 
 const saveMetadata = (_loadedImageObject) => {
   let shortName = _loadedImageObject.imgObject.filename.replace(
     /\.[^/.]+$/,
@@ -156,6 +158,7 @@ const writeMetaData = (_data) => {
   fs.writeFileSync(`${buildDir}/_metadata.json`, _data);
 };
 
+//This function loads all the images in image folder, redraws it and generates metadata.
 const startCreating = async () => {
   const images = getImages(inputDir);
   if (images == null) {
@@ -168,8 +171,8 @@ const startCreating = async () => {
   });
   await Promise.all(loadedImageObjects).then((loadedImageObjectArray) => {
     loadedImageObjectArray.forEach((loadedImageObject) => {
-      draw(loadedImageObject);
-      saveMetadata(loadedImageObject);
+      draw(loadedImageObject);//This redraws the images in a canvas.
+      saveMetadata(loadedImageObject);//This generates metadata.
       console.log(
         `Created metadata for image: ${loadedImageObject.imgObject.filename}`
       );
