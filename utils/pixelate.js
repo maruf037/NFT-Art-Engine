@@ -1,3 +1,5 @@
+//To execute run: npm run pixelate
+
 const fs = require("fs");
 const path = require("path");
 const { createCanvas, loadImage } = require("canvas");

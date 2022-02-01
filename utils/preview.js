@@ -1,3 +1,5 @@
+//To execute run: npm run preview
+
 const basePath = process.cwd();
 const fs = require("fs");
 const { createCanvas, loadImage } = require("canvas");
