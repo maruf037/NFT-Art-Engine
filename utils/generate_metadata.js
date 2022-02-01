@@ -137,14 +137,14 @@ const saveMetadata = (_loadedImageObject) => {
   );
 
   let tempAttributes = [];
-  tempAttributes.push(addRarity());
+  tempAttributes.push(addRarity());//Adds rarity attributes.
 
   let tempMetadata = {
     name: `${namePrefix} #${shortName}`,
     description: description,
     image: `${baseUri}/${shortName}.png`,
     edition: Number(shortName),
-    attributes: tempAttributes,
+    attributes: tempAttributes,//Concates tempAttributes with tempMetadata.
     compiler: "HashLips Art Engine",
   };
   fs.writeFileSync(

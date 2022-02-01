@@ -35,11 +35,24 @@ const layerConfigurations = [
       { name: "Top lid" },
     ],
   },
+  // {
+  //   growEditionSizeTo: 20,//If you want to create another set of images, you can add another layer configuration here. But the 'growEditionSizeTo' should be ('growEditionSizeTo' of the first set + 'number of images you want to create') [eg. 10 + 20 = 30]
+  //   layersOrder: [
+  //     { name: "Background" },
+  //     { name: "Eyeball" },
+  //     { name: "Eye color" },
+  //     { name: "Iris" },
+  //     { name: "Shine" },
+  //     { name: "Bottom lid" },
+  //     { name: "Top lid" },
+  //     { name: "Goo" },
+  //   ],
+  // },
 ];
 
-const shuffleLayerConfigurations = false;
+const shuffleLayerConfigurations = true;//If you want to shuffle the layers order, set this to true. This works relatively well when you have multiple layer configurations. 
 
-const debugLogs = false;
+const debugLogs = false;//Set this to true if you want to see extra details during rendering.
 
 const format = {
   width: 512,
@@ -78,11 +91,15 @@ const background = {
   default: "#000000",
 };
 
-const extraMetadata = {};
+//This puts your extra metadata in the JSON file.
+const extraMetadata = {
+  // artist: 'Maruf',
+  // surname: 'Hossain',
+};
 
-const rarityDelimiter = "#";
+const rarityDelimiter = "#";//
 
-const uniqueDnaTorrance = 10000;
+const uniqueDnaTorrance = 10000;//This sets your image generation to fail if you dont have enough unique layers. This 
 
 const preview = {
   thumbPerRow: 5,
